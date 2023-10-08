@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background-color: rgb(19, 19, 19);
+}
+
+.digital-clock{
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.clock-board{
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  width: 360px;
+  height: 360px;
+
+}
+
+.clock-board::before{
+    position: absolute;
+    z-index: 5;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: black;
+    top: 49%;
+    left: 51%;
+}
+
+.hr{
+  position: absolute;
+  padding: 0;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.hr1{
+    top: 9%;
+    right: 22%;
+}
+.hr2{
+    top: 25%;
+    right: 8%;
+}
+.hr3{
+    top: 46%;
+    right: 2%;
+}
+.hr4{
+    bottom: 22%;
+    right: 8%;
+}
+.hr5{
+    bottom: 6%;
+    right: 24%;
+}
+.hr6{
+    bottom: 1%;
+    left: 51%;
+}
+.hr7{
+    bottom: 5%;
+    left: 28%;
+}
+.hr8{
+    bottom: 20%;
+    left: 10%;
+}
+
+.hr9{
+    top: 46%;
+    left: 5%;
+}
+.hr10{
+    top: 23%;
+    left: 10%;
+}
+.hr11{
+    top: 7%;
+    left: 26%;
+}
+.hr12{
+  top: 1%;
+  left: 48%;
+}
+.clock-components{
+    position: relative;
+}
+.line{
+    border-radius: 20px 20px 0 0;
+    background-color: black;
+    position: absolute;
+    height: 140px;
+    top: 13%;
+    left: 51%;
+    z-index: 5;
+    transform-origin: bottom center;
+}
+
+.min-line{
+    width: 10px;
+}
+.hr-line{
+    top: 24%;
+    height: 100px;
+    width: 10px;
+}
+.sec-line{
+    width: 5px;
+}
+
+
